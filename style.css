@@ -1,3 +1,8 @@
+@font-face {
+    font-family: NorseBold;
+    src: url("Norse-Bold.otf");
+}
+
 body, html {
     height: 100%;
     width: 100%;
@@ -5,15 +10,36 @@ body, html {
   }
   
 body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: flex;
     height: 100vh;
 }
 
 .logo-banner{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+    background-color: #00000074;
+    margin-top: 30vh;
+}
+
+.logo-banner>h1{
+    color: #ffffff;
+    font-family:NorseBold, sans-serif;
+    font-size: 120px;
+}
+
+.logo-banner>img{
+    height: 150px;
 }
 
 .left-side {
+    display: flex;
     background-image: url("photo-1585202900225-6d3ac20a6962.avif");
-    width: 33%;
+    background-size: cover;
+    max-width: 35%;
+    flex: 1;
+
 }
