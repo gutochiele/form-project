@@ -15,31 +15,129 @@ body {
     height: 100vh;
 }
 
-.logo-banner{
+#logo-banner {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 180px;
     width: 100%;
     background-color: #00000074;
-    margin-top: 30vh;
+    margin-top: 33vh;
 }
 
-.logo-banner>h1{
+#logo-banner>h1 {
     color: #ffffff;
     font-family:NorseBold, sans-serif;
     font-size: 120px;
 }
 
-.logo-banner>img{
+#logo-banner>img {
     height: 150px;
 }
 
-.left-side {
+#left-side {
     display: flex;
     background-image: url("photo-1585202900225-6d3ac20a6962.avif");
     background-size: cover;
-    max-width: 35%;
+    min-width: 35%;
     flex: 1;
-
+    flex-direction: column;  
+    justify-content: space-between;
+    align-items: center;
 }
+
+a, 
+a:hover, 
+a:active, 
+a:visited, 
+#left-side>p{
+    color: #ffffff;
+}
+
+#right-side {
+    display:flex;
+    flex-direction: column;
+}
+
+#text-box {
+    display: flex;
+    height: 33%;
+    align-items: center;
+    padding-left: 50px;
+    background-color: #e6e6e645;
+}
+
+#text-box>p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    max-width: 80%;
+    font-size: 30px;
+    margin-top: 10%;
+}
+
+#form-section {
+    padding-left: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+    height: 33%;
+}
+
+#form-box{
+    display: flex;
+}
+
+#first-col{
+    margin-right: 8vw;
+}
+
+#first-col>input,
+#second-col>input{
+    font-size: 1.5em;
+    width: 15vw;
+    height: 3vh;
+    margin-bottom: 15px;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+
+#bottom-section {
+    height: 34%;
+    padding-left: 50px;
+    background-color: #e6e6e645;
+}
+
+.styled{
+    background-color: #596D48;
+    border-radius: 10px;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    color: #ffffff;
+    height: 5vh;
+    width: 13vw;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#bottom-section>p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+#login, 
+#login:visited, 
+#login:hover, 
+#login:active{
+    color: #596D48;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+input:focus {
+    /* background-color: #266b3c24; */
+    outline-color:#596D48;
+  }
+
+  input:invalid:required{
+    outline-color: #ff0000;
+  }
