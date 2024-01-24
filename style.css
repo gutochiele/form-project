@@ -71,7 +71,7 @@ a:visited,
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     max-width: 80%;
-    font-size: 25px;
+    font-size: 1.2em;
     margin-top: 10%;
 }
 
@@ -120,7 +120,7 @@ a:visited,
 
 #bottom-section>p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 0;
 }
 
