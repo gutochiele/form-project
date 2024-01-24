@@ -28,11 +28,11 @@ body {
 #logo-banner>h1 {
     color: #ffffff;
     font-family:NorseBold, sans-serif;
-    font-size: 120px;
+    font-size: 15vh;
 }
 
 #logo-banner>img {
-    height: 150px;
+    height: 15vh;
 }
 
 #left-side {
@@ -52,6 +52,7 @@ a:active,
 a:visited, 
 #left-side>p{
     color: #ffffff;
+    font-size: 2vh;
 }
 
 #right-side {
@@ -61,7 +62,7 @@ a:visited,
 
 #text-box {
     display: flex;
-    height: 33%;
+    min-height: 33%;
     align-items: center;
     padding-left: 50px;
     background-color: #e6e6e645;
@@ -76,9 +77,11 @@ a:visited,
 }
 
 #form-section {
+    display: flex;
+    flex-direction: column  ;
     padding-left: 50px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
-    height: 33%;
+    /* height: 35vh; */
 }
 
 #form-box{
@@ -87,22 +90,48 @@ a:visited,
 
 #first-col{
     margin-right: 8vw;
+
 }
 
-#first-col>input,
-#second-col>input{
-    font-size: 1.5em;
+label{
+    font-size: 1em;
+
+}
+
+#first-col>.input-style>input,
+#second-col>.input-style>input{
+    font-size: 0.8em;
     width: 15vw;
     height: 3vh;
-    margin-bottom: 15px;
-    margin-top: 4px;
+    margin-bottom: 2vh;
+    margin-top: 0.2vh;
     border-radius: 5px;
 }
 
+#create-account-form>p{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 0.8em;
+}
+
+#form-section>h2{
+    margin: 1vh 0;
+}
+
+
 #bottom-section {
-    height: 34%;
+    height: 50%;
     padding-left: 50px;
     background-color: #e6e6e645;
+}
+
+#psw-text{
+    font-size: 0.7em;
+    width: 18vw;
+}
+
+input#password{
+    margin-bottom: 0.5vh !important;
 }
 
 .styled{
@@ -113,14 +142,14 @@ a:visited,
     color: #ffffff;
     height: 5vh;
     width: 13vw;
-    font-size: 1.2em;
+    font-size: 2vh;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #bottom-section>p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0;
 }
 
@@ -134,11 +163,10 @@ a:visited,
 }
 
 input:focus {
-    background-color: #266b3c24;
-    outline-color:#596D48;
+    /* background-color: #266b3c24; */
   }
 
-  input:invalid:required{
-    outline-color: #ff0000c2;
-    background-color: #ff000062;
+  input:focus:invalid{
+    background-color: #ff000028;
+    outline-color: #fe00008c;
   }
