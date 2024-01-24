@@ -134,10 +134,11 @@ a:visited,
 }
 
 input:focus {
-    /* background-color: #266b3c24; */
+    background-color: #266b3c24;
     outline-color:#596D48;
   }
 
   input:invalid:required{
-    outline-color: #ff0000;
+    outline-color: #ff0000c2;
+    background-color: #ff000062;
   }
